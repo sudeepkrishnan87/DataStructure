@@ -46,6 +46,7 @@ public final class App {
 
        inpost.constructTree(inorder, postOrder, inorder.size());  
        
+       System.out.println();
        Preorder pre=new Preorder();
        pre.node = new TreeNode(1);
        pre.node.left = new TreeNode(12);
@@ -53,6 +54,14 @@ public final class App {
        pre.node.left.left = new TreeNode(5);
        pre.node.left.right = new TreeNode(6);
        pre.preorder(pre.node);
+
+       Preorder pre_iter=new Preorder();
+       pre_iter.node = new TreeNode(1);
+       pre_iter.node.left = new TreeNode(12);
+       pre_iter.node.right = new TreeNode(9);
+       pre_iter.node.left.left = new TreeNode(5);
+       pre_iter.node.left.right = new TreeNode(6);
+       pre_iter.preorder_Iterative(pre_iter.node);
       
        System.out.println();
        PostOrder post=new PostOrder();
