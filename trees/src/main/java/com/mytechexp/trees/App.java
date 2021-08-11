@@ -72,5 +72,11 @@ public final class App {
        post.root.left.right = new TreeNode(6);
        post.postOrder(post.root);
 
+
+       int[] arr=new int[]{1, 2, 3};
+       System.out.println("BST");
+       ConstructBST bst=new ConstructBST();
+       TreeNode node= bst.sortedArrayToBST(arr);
+
     }
 }
