@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 /*
 
@@ -27,7 +28,7 @@ public class VerticalOrdering {
 
   
 
-    Map<Integer,ArrayList<Integer>> map=new HashMap<>();
+    TreeMap<Integer,ArrayList<Integer>> map=new TreeMap<>();
     ArrayList<ArrayList<Integer>> result=new ArrayList<>();
     int min=0,max=0;
 ArrayList<ArrayList<Integer>> verticalOrder(TreeNode node)
@@ -66,17 +67,22 @@ return result;
     public static void main(String[] arg)
     {
         VerticalOrdering vertObj=new VerticalOrdering();
-        TreeNode tree=new TreeNode(6);
-        TreeNode head=tree;
-        tree.left=new TreeNode(3);
-        tree.right=new TreeNode(7);
-        tree.left.left=new TreeNode(2);
-        tree.left.right = new TreeNode(5);
-       
-        tree.right.right = new TreeNode(9);
+        TreeNode root;
+        root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
+        root.left.right = new TreeNode(5);
+        root.right.left = new TreeNode(6);
+        root.right.right = new TreeNode(7);
+        root.right.left.right = new TreeNode(8);
+        root.right.right.right = new TreeNode(9);
+        root.right.right.left = new TreeNode(10);
+        root.right.right.left.right = new TreeNode(11);
+        root.right.right.left.right.right = new TreeNode(12);
         
         
-      ArrayList<ArrayList<Integer>> result=  vertObj.verticalOrder(head);
+      ArrayList<ArrayList<Integer>> result=  vertObj.verticalOrder(root);
       result.forEach(i->System.out.println(i));
     }
     

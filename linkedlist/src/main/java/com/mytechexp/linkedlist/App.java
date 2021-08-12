@@ -24,5 +24,9 @@ public final class App {
         list.showList();
         list.specialOrder();
         list.showList();
+
+
+        //palindrom
+        
     }
 }
