@@ -1,6 +1,5 @@
 package com.mytechexp.trees;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -8,6 +7,7 @@ import java.util.Arrays;
  * Hello world!
  */
 public final class App {
+
     private App() {
     }
 
@@ -76,7 +76,7 @@ public final class App {
        int[] arr=new int[]{1, 2, 3};
        System.out.println("BST");
        ConstructBST bst=new ConstructBST();
-       TreeNode node= bst.sortedArrayToBST(arr);
+       sortedArrayToBST = bst.sortedArrayToBST(arr);
 
     }
 }

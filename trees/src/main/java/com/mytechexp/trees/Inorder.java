@@ -1,6 +1,5 @@
 package com.mytechexp.trees;
 
-import java.util.ArrayList;
 import java.util.Stack;
 
 public class Inorder {
@@ -21,7 +20,6 @@ out put for in order is left,root,right
 
     TreeNode curnode=root;
     Stack <TreeNode> st=new Stack<>();
-    ArrayList<Integer> result=new ArrayList<>();
     while(curnode!=null|| !(st.empty()))
     {
        while(curnode!=null)
