@@ -76,7 +76,7 @@ public final class App {
        int[] arr=new int[]{1, 2, 3};
        System.out.println("BST");
        ConstructBST bst=new ConstructBST();
-       sortedArrayToBST = bst.sortedArrayToBST(arr);
+       TreeNode sortedArrayToBST = bst.sortedArrayToBST(arr);
 
     }
 }
